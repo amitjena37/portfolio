@@ -1,7 +1,14 @@
 import React from 'react';
 import styles from './PromptCard.module.css';
 
-export default function PromptCard({title, prompt, logic}) {
+// Define the "shape" of the props
+interface PromptCardProps {
+  title: string;
+  prompt: string;
+  logic: string;
+}
+
+export default function PromptCard({ title, prompt, logic }: PromptCardProps) {
   return (
     <div className={styles.card}>
       <div className={styles.header}>

@@ -1,0 +1,37 @@
+.timeline {
+  padding: 2rem 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timelineItem {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  border-left: 2px solid #10b981;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.timelineItem::before {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #10b981;
+}
+
+.timelineYear {
+  font-weight: 800;
+  min-width: 120px;
+  color: #10b981;
+}
+
+.company {
+  opacity: 0.6;
+  font-weight: 400;
+  font-size: 0.9rem;
+}

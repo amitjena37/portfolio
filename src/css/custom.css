@@ -28,3 +28,34 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Blog Card Styling */
+.blog-list-page article {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: var(--ifm-background-surface-color);
+  border-radius: 16px;
+  border: 1px solid rgba(16, 185, 129, 0.1);
+  transition: all 0.3s ease;
+}
+
+.blog-list-page article:hover {
+  transform: translateY(-5px);
+  border-color: #10b981;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.blog-list-page article h2 a {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--ifm-color-emphasis-900);
+}
+
+/* Custom Tag Styling */
+.tag_node_modules-\@docusaurus-theme-classic-lib-theme-BlogTagsPosts-styles-module {
+  background: rgba(16, 185, 129, 0.1) !important;
+  color: #10b981 !important;
+  border: none !important;
+  padding: 4px 12px !important;
+  border-radius: 20px !important;
+}

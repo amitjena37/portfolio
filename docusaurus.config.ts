@@ -52,10 +52,15 @@ const config: Config = {
         {type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left', label: 'Portfolio'},
         {to: '/blog', label: 'AI Insights', position: 'left'},
         {
-          href: 'https://github.com/your-github-username',
+          href: 'https://github.com/amitjena37',
           label: 'GitHub',
           position: 'right',
         },
+        {
+          href: 'https://www.linkedin.com/in/amit-k-jena',
+          label: 'LinkedIn',
+          position: 'right',
+      },
       ],
     },
     footer: {
