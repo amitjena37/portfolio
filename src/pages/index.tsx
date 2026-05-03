@@ -8,7 +8,7 @@ import Heading from '@theme/Heading';
 // Custom Components
 import PromptCard from '@site/src/components/PromptCard';
 import Timeline from '@site/src/components/Timeline';
-import Testimonial from '@site/src/components/Testimonial';
+import TestimonialMarquee from '@site/src/components/TestimonialMarquee';
 
 import styles from './index.module.css';
 
@@ -116,25 +116,10 @@ TASK: Summarize changes into a neutral, authoritative Markdown format.`}
           </div>
         </section>
 
-        {/* 5. TESTIMONIALS: Social Proof */}
-        <section className="container padding-vert--xl">
-          <Heading as="h2" style={{ textAlign: 'center', marginBottom: '3rem' }}>Leadership Feedback</Heading>
-          <div className="row">
-            <div className="col col--6">
-              <Testimonial 
-                quote="Amit doesn't just write; he engineers content. His approach to ModelOps documentation was a game-changer for our dev teams."
-                author="Engineering Director"
-                title="Global Infrastructure Team"
-              />
-            </div>
-            <div className="col col--6">
-              <Testimonial 
-                quote="The most forward-thinking content strategist I have worked with. He anticipated the RAG era before it became industry standard."
-                author="Senior Product Manager"
-                title="AI Platforms Division"
-              />
-            </div>
-          </div>
+        {/* 5. TESTIMONIALS: Infinite Moving Tiles */}
+        <section className="padding-vert--xl" style={{ borderTop: '1px solid var(--ifm-color-emphasis-200)' }}>
+        <Heading as="h2" style={{ textAlign: 'center', marginBottom: '2rem' }}>Leadership Feedback</Heading>
+         <TestimonialMarquee />
         </section>
 
       </main>

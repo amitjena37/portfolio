@@ -1,0 +1,37 @@
+.marqueeContainer {
+  overflow: hidden;
+  padding: 2rem 0;
+  background: rgba(16, 185, 129, 0.02);
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
+
+/* The element that actually moves */
+.marqueeTrack {
+  display: flex;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+}
+
+/* Pause on hover so people can actually read the feedback */
+.marqueeContainer:hover .marqueeTrack {
+  animation-play-state: paused;
+}
+
+.testimonialCard {
+  flex: 0 0 auto;
+  width: 400px; /* Fixed width for the tiles */
+  margin: 0 1rem;
+  padding: 1.5rem;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid rgba(16, 185, 129, 0.1);
+  border-radius: 12px;
+  white-space: normal; /* Allows text to wrap inside the card */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Move half the track length */
+}
