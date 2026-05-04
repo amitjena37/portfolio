@@ -6,6 +6,7 @@ tags: [Strategy, AI, Knowledge Graphs, RAG]
 ---
 
 The traditional documentation model is a hierarchy of folders and files. While this serves human readers browsing a table of contents, it fails the primary consumer of 2026: the AI agent. To bridge this gap, technical content must move toward a Knowledge Graph architecture.
+<!-- truncate -->
 
 ### The Semantic Shift
 In a standard Docs-as-Code workflow, content is often siloed. A Knowledge Graph breaks these silos by representing documentation as a network of entities and relationships. Instead of a linear path, a Knowledge Graph uses triples (Subject, Predicate, Object) to define how information relates. 

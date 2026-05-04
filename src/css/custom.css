@@ -59,3 +59,112 @@
   padding: 4px 12px !important;
   border-radius: 20px !important;
 }
+
+/* Blog Page Layout */
+.blog-list-page article {
+  border: 1px solid rgba(16, 185, 129, 0.1);
+  border-radius: 12px;
+  padding: 2.5rem;
+  background: var(--ifm-background-surface-color);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+}
+
+.blog-list-page article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  border-color: #10b981;
+}
+
+/* Unified Blog Typography for Consistency */
+/* This targets both the 'List' view and the 'Full Post' view */
+.blog-list-page .markdown, 
+.blog-post-page .markdown {
+  font-size: 1rem !important; /* Returns to standard Docusaurus/Browser size */
+  line-height: 1.65;
+  letter-spacing: normal;
+  color: var(--ifm-color-emphasis-900);
+}
+
+/* Toning down the H1 title on the post page */
+.blog-post-page header h1 {
+  font-size: 2.2rem; 
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+
+/* Refining section headers */
+.blog-post-page h2,
+.blog-list-page h2 {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  border-bottom: none; /* Cleaner, less 'busy' look */
+}
+
+/* Making the 'Read More' link look like a professional button */
+.blog-list-page .markdown a[class*='blogPostReadMore'] {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.4rem 1rem;
+  border: 1px solid #10b981;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.blog-list-page .markdown a[class*='blogPostReadMore']:hover {
+  background: rgba(16, 185, 129, 0.1);
+  transform: translateY(-1px);
+}
+
+/* Refined Journalistic Lead Paragraph */
+.blog-post-page .markdown > p:first-of-type {
+  font-size: 1.08rem; /* Subtle increase from the 1rem base */
+  line-height: 1.6;
+  color: var(--ifm-color-emphasis-800); /* Slightly softer than pure black/white */
+  font-weight: 500; /* Medium weight for authority */
+  margin-bottom: 2rem;
+  border-left: 3px solid #10b981; /* Adds a professional 'accent' bar to the left */
+  padding-left: 1rem;
+}
+
+/* Subtle Link Animation */
+.markdown a {
+  text-decoration: none;
+  border-bottom: 1px solid #10b981;
+  transition: all 0.2s ease;
+}
+
+.markdown a:hover {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+
+/* Smooth Entrance Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.blog-list-page article {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Premium Code Blocks */
+.theme-code-block {
+  border-radius: 12px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-code-block code {
+  font-family: 'JetBrains Mono', monospace !important;
+}

@@ -6,6 +6,7 @@ tags: [AI, Content Engineering, DocOps]
 ---
 
 We are no longer writing solely for human eyes. As AI agents become the primary interface for developer troubleshooting and onboarding, the definition of good documentation has fundamentally changed. We must now optimize for Agent-Readiness.
+<!-- truncate -->
 
 ### The Three Pillars of Agent-Fitness
 To make content fit for an AI agent, technical writers must focus on three specific engineering principles.

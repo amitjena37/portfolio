@@ -40,6 +40,20 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+  [
+    require.resolve("@easyops-cn/docusaurus-search-local"),
+    {
+      hashed: true,
+      indexBlog: true,
+      indexDocs: true,
+      language: ["en"],
+      highlightSearchTermsOnTargetPage: true,
+      explicitSearchResultPath: true,
+    },
+  ],
+],
+
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
@@ -50,7 +64,7 @@ const config: Config = {
       },
       items: [
         {type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left', label: 'Portfolio'},
-        {to: '/blog', label: 'AI Insights', position: 'left'},
+        {to: '/blog', label: 'The Content Journal', position: 'left'},
         {
           href: 'https://github.com/amitjena37',
           label: 'GitHub',
