@@ -78,10 +78,10 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
-      links: [],
-      copyright: `Copyright © ${new Date().getFullYear()} Amit Kumar Jena. Built with Docusaurus.`,
-    },
+  style: 'dark',
+  links: [/* your links */],
+  copyright: `Copyright © ${new Date().getFullYear()} Amit Jena. The Content Journal content licensed under MIT.`,
+},
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
